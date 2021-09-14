@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#! /usr/bin/python3
 """
 Kendel Tatsak
 7/28/2021
@@ -247,20 +247,22 @@ def getOrderedArray():
 def getRandomArtist():
     firstLetters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',
                     'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '19']
+    
     artist = ''
     with open('../artistsToScan.txt', 'r') as file:
         lines = file.read().splitlines()
-	#lines = file.readlines()
         if lines != []:
             artist = lines[0].split(',')
-            print(lines)
 
     with open('../artistsToScan.txt', 'w') as file:
-        for line in lines:
-            if line.split(',')  is artist:
-                pass
-            else:
-                file.writelines(line + '\n')
+        i = 0
+        if lines != []:
+            for line in lines:
+                if i is 0:
+                    pass
+                else:
+                    file.writelines(lines[i] + '\n')
+                i += 1
 
     if artist == '':
 

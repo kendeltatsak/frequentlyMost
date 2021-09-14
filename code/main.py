@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#! /usr/bin/python3
 """
 Kendel Tatsak
 7/28/2021
@@ -8,9 +8,11 @@ Kendel Tatsak
 import time
 import random
 import azapi
+import sys
 
 
 artist = azapi.getRandomArtist()
+#print(artist)
 print(artist[1] + "\n")
 arrayOfLinks = azapi.getSongs(artist[0])
 print("number of songs to scan for artist " + artist[1] + ": " + str(len(arrayOfLinks)))
