@@ -175,7 +175,8 @@ FILTEREDWORDS = ['the', 'of', 'and', 'a', 'to', 'in', 'is', 'you', 'that', 'it',
                 'people', 'my', 'than', 'first', 'been', 'call', 'who', 'hes', 'shes', 'whos',
                 'its', 'now', 'find', 'day', 'did', 'get', 'come', 'made', 'us', 'our', 'well',
                 'may', 'part', 'dont', 'youre', 'too', 'didnt', 'ive', 'why', 'cant', 'wont',
-                'cause', 'ill', 'itll', 'off', 'im', 'me', 'am', 'yeah', 'oh', '-', '- -']
+                'cause', 'ill', 'itll', 'off', 'im', 'me', 'am', 'yeah', 'oh', '-', '- -',
+                'couldve', 'shouldve', 'thatll']
 
 
 def getLyrics(url):
@@ -212,7 +213,7 @@ def removeSpecialCharactersPlusLower(array):
         if '[' in word or ']' in word:
             pass
         else:
-            formattedArray.append(re.sub("\!|\.|\;|\:|\?|\'|\,|\"||\(|\)|&", "", word).lower())
+            formattedArray.append(re.sub("\!|\.|\;|\:|\?|\'|\,|\"||\(|\)|&|’", "", word).lower())
 
     return formattedArray
 
