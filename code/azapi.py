@@ -311,7 +311,11 @@ def sendToFile(orderedArray, artistName, numSongs):
                 line = line + ' use.\n'
             else:
                 line = line + ' uses.\n'
+<<<<<<< HEAD
             file.write(line)
+=======
+            file.write(s)
+>>>>>>> e7cfedc3501c97add2c6bb17d59ed31f6b4e5702
 
     file.close()
     return fileName
