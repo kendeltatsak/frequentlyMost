@@ -306,8 +306,12 @@ def sendToFile(orderedArray, artistName, numSongs):
         file.write('Most used words by ' + artistName + ': \n')
         file.write('Number of songs scanned: ' + str(numSongs) + '\n\n')
         for i in range(len(orderedArray)):
-            s = str(i + 1) + '. ' + str(orderedArray[i][0]) + ' - ' + str(orderedArray[i][1]) + ' uses.\n'
-            file.write(s)
+            line = str(i + 1) + '. ' + str(orderedArray[i][0]) + ' - ' + str(orderedArray[i][1])
+            if orderedArray[i][1] is 1:
+                line = line + ' use.\n'
+            else:
+                line = line + ' uses.\n'
+            file.write(line)
 
     file.close()
     return fileName
