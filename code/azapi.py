@@ -158,6 +158,7 @@ import json
 import tweepy
 import sys
 import keyring
+import time
 
 
 # global variables
@@ -172,15 +173,27 @@ FILTEREDWORDS = ['the', 'of', 'and', 'a', 'to', 'in', 'is', 'you', 'that', 'it',
                 'other', 'about', 'out', 'many', 'then', 'them', 'these', 'so', 'some', 'our', 'youll',
                 'her', 'would', 'make', 'like', 'him', 'into', 'time', 'has', 'look', 'youve', 'theres',
                 'two', 'more', 'go', 'see', 'no', 'way', 'could', 'just', 'cause', 'got', 'theyve',
-                'people', 'my', 'than', 'first', 'been', 'call', 'who', 'hes', 'shes', 'whos',
+                'still', 'my', 'than', 'gonna', 'been', 'call', 'who', 'hes', 'shes', 'whos',
                 'its', 'now', 'find', 'day', 'did', 'get', 'come', 'made', 'us', 'our', 'well',
                 'may', 'part', 'dont', 'youre', 'too', 'didnt', 'ive', 'why', 'cant', 'wont',
                 'cause', 'ill', 'itll', 'off', 'im', 'me', 'am', 'yeah', 'oh', '-', '- -',
-                'couldve', 'shouldve', 'thatll']
+                'couldve', 'shouldve', 'thatll', 'want', 'wanna']
 
 
 def getLyrics(url):
-    mainPage = requests.get(url)
+    mainPage = None
+    retryCount = 0
+    while mainPage is None:
+        if retryCount is 11:
+            sendErrorEmail('Error in getLyrics(). Retry count exceeded 10 tries.', retryCount)
+        else:
+            try:
+                mainPage = requests.get(url)
+            except:
+                print("connection error. Retrying in 20 seconds.")
+                time.sleep(20)
+                retryCount += 1
+            
     if mainPage.status_code != 200:
         sendErrorEmail('getLyrics()', mainPage.status_code)
     else:
@@ -213,7 +226,7 @@ def removeSpecialCharactersPlusLower(array):
         if '[' in word or ']' in word:
             pass
         else:
-            formattedArray.append(re.sub("\!|\.|\;|\:|\?|\'|\,|\"||\(|\)|&|’", "", word).lower())
+            formattedArray.append(re.sub("\!|\.|\;|\:|\?|\'|\,|\"||\(|\)|&|\’", "", word).lower())
 
     return formattedArray
 
@@ -345,8 +358,10 @@ def sendErrorEmail(functionName, e):
 
     if type(e) == int:
         message = 'error in ' + functionName + '. Error: HTTP status code returned == ' + str(e)
+        print(message)
         sys.exit(message)
     else:
         message = 'error in ' + functionName + '. Error:\n\n' + str(e)
+        print(message)
         sys.exit(message)
 
