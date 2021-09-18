@@ -307,15 +307,12 @@ def sendToFile(orderedArray, artistName, numSongs):
         file.write('Number of songs scanned: ' + str(numSongs) + '\n\n')
         for i in range(len(orderedArray)):
             line = str(i + 1) + '. ' + str(orderedArray[i][0]) + ' - ' + str(orderedArray[i][1])
+            
             if orderedArray[i][1] is 1:
                 line = line + ' use.\n'
             else:
                 line = line + ' uses.\n'
-<<<<<<< HEAD
             file.write(line)
-=======
-            file.write(s)
->>>>>>> e7cfedc3501c97add2c6bb17d59ed31f6b4e5702
 
     file.close()
     return fileName
