@@ -170,14 +170,14 @@ FILTEREDWORDS = ['the', 'of', 'and', 'a', 'to', 'in', 'is', 'you', 'that', 'it',
                 'this', 'have', 'from', 'or', 'one', 'had', 'by', 'word', 'but', 'not', 'aint',
                 'what', 'all', 'were', 'we', 'when', 'your', 'can', 'said', 'there', 'use', 'man',
                 'an', 'each', 'which', 'she', 'do', 'how', 'their', 'if', 'will', 'up', 'say', 'id', 
-                'other', 'about', 'out', 'many', 'then', 'them', 'these', 'so', 'some', 'our', 'youll',
+                'out', 'many', 'then', 'them', 'these', 'so', 'some', 'our', 'youll',
                 'her', 'would', 'make', 'like', 'him', 'into', 'time', 'has', 'look', 'youve', 'theres',
                 'two', 'more', 'go', 'see', 'no', 'way', 'could', 'just', 'cause', 'got', 'theyve',
                 'still', 'my', 'than', 'gonna', 'been', 'call', 'who', 'hes', 'shes', 'whos',
                 'its', 'now', 'find', 'day', 'did', 'get', 'come', 'made', 'us', 'our', 'well',
                 'may', 'part', 'dont', 'youre', 'too', 'didnt', 'ive', 'why', 'cant', 'wont',
                 'cause', 'ill', 'itll', 'off', 'im', 'me', 'am', 'yeah', 'oh', '-', '- -',
-                'couldve', 'shouldve', 'thatll', 'want', 'wanna']
+                'couldve', 'shouldve', 'thatll', 'want', 'wanna', 'la', 'da', 'ba']
 
 
 def getLyrics(url):
