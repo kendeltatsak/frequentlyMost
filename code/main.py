@@ -14,6 +14,7 @@ import sys
 artist = azapi.getRandomArtist()
 print(artist[1] + "\n")
 arrayOfLinks = azapi.getSongs(artist[0])
+#timeToRun = len(arrayOfLinks) * 15 / 60
 print("number of songs to scan for artist " + artist[1] + ": " + str(len(arrayOfLinks)))
 
 count = 0
