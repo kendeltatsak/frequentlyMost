@@ -176,7 +176,7 @@ FILTEREDWORDS = ['the', 'of', 'and', 'a', 'to', 'in', 'is', 'you', 'that', 'it',
                 'still', 'my', 'than', 'gonna', 'been', 'call', 'who', 'hes', 'shes', 'whos',
                 'its', 'now', 'find', 'day', 'did', 'get', 'come', 'made', 'us', 'our', 'well',
                 'may', 'part', 'dont', 'youre', 'too', 'didnt', 'ive', 'why', 'cant', 'wont',
-                'cause', 'ill', 'itll', 'off', 'im', 'me', 'am', 'yeah', 'oh', '-', '- -',
+                'cause', 'ill', 'itll', 'off', 'im', 'me', 'am', 'yeah', 'oh', '-', '- -', '– -',
                 'couldve', 'shouldve', 'thatll', 'want', 'wanna', 'la', 'da', 'ba', 'le', 'ok']
 
 
