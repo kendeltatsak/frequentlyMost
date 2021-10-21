@@ -1,29 +1,7 @@
-https://azlyrics.com/p/paramore.html,Paramore
-https://azlyrics.com/n/neckdeep.html,Neck Deep
-https://azlyrics.com/s/sleepingatlast.html,Sleeping At Last
-https://azlyrics.com/e/entershikari.html,Enter Shikari
-https://azlyrics.com/d/dancegavindance.html,Dance Gavin Dance
-https://azlyrics.com/s/silverstein.html,Silverstein
-https://azlyrics.com/d/deftones.html,Deftones
-https://azlyrics.com/g/greetingcommittee.html,The Greeting Committee
-https://azlyrics.com/a/altj.html,Alt-J
-https://azlyrics.com/s/soccermommy.html,Soccer Mommy
-https://azlyrics.com/h/hotmulligan.html,Hot Mulligan
-https://azlyrics.com/c/carseatheadrest.html,Car Seat Headrest
-https://azlyrics.com/k/kingsofleon.html,Kings Of Leon
-https://azlyrics.com/a/arcticmonkeys.html,Arctic Monkeys
-https://azlyrics.com/t/tinymovingparts.html,Tiny Moving Parts
-https://azlyrics.com/h/hotelier.html,The Hotelier
-https://azlyrics.com/k/killers.html,The Killers
-https://azlyrics.com/s/strokes.html,The Strokes
-https://azlyrics.com/n/national.html,The National
-https://azlyrics.com/t/tylerchilders.html,Tyler Childers
-https://azlyrics.com/f/flatliners.html,The Flatliners
-https://azlyrisc.com/t/tameimpala.html,Tame Impala
 https://azlyrics.com/b/better.html,Better Than Ezra
 https://azlyrics.com/h/hopalong.html,Hop Along
 https://azlyrics.com/a/americanfootball.html,American Football
-https://azlyrics.com/h/hippocampus.html,Hippo Campus
 https://azlyrics.com/d/drivebytruckers.html,Drive-By Truckers
 https://azlyrics.com/b/backseatlovers.html,Backseat Lovers
-https://azlyrics.com/g/gloryhammer.html,Gloryhammer
+https://azlyrics.com/k/kurtvile.html,Kurt Vile
+https://azlyrics.com/w/warondrugs.html,The War On Drugs
