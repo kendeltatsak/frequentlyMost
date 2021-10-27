@@ -344,14 +344,23 @@ def sendTweet(orderedArray, gistURL, artist, numWords):
     auth = tweepy.OAuthHandler(tokens[1], tokens[2])
     auth.set_access_token(tokens[3], tokens[4])
     api = tweepy.API(auth)
-    tweet = ("Top 5 words used by " + artist + "\n"
-             "Number of songs scanned: " + str(numWords) + "\n\n"
-             "1. " + orderedArray[0][0] + " - " + str(orderedArray[0][1]) + " uses.\n"
-             "2. " + orderedArray[1][0] + " - " + str(orderedArray[1][1]) + " uses.\n"
-             "3. " + orderedArray[2][0] + " - " + str(orderedArray[2][1]) + " uses.\n"
-             "4. " + orderedArray[3][0] + " - " + str(orderedArray[3][1]) + " uses.\n"
-             "5. " + orderedArray[4][0] + " - " + str(orderedArray[4][1]) + " uses.\n\n"
-             "View the entire list here: " + gistURL
+    if len(artist) == 3:
+        tweet = ("Top 5 words used by " + artist[1] + " (" + artist[2] + ")" + "\n\n"
+                 "1. " + orderedArray[0][0] + " - " + str(orderedArray[0][1]) + " uses.\n"
+                 "2. " + orderedArray[1][0] + " - " + str(orderedArray[1][1]) + " uses.\n"
+                 "3. " + orderedArray[2][0] + " - " + str(orderedArray[2][1]) + " uses.\n"
+                 "4. " + orderedArray[3][0] + " - " + str(orderedArray[3][1]) + " uses.\n"
+                 "5. " + orderedArray[4][0] + " - " + str(orderedArray[4][1]) + " uses.\n\n"
+                 "View the entire list here: " + gistURL
+                )
+    else:
+        tweet = ("Top 5 words used by " + artist[1] + "\n\n"
+                 "1. " + orderedArray[0][0] + " - " + str(orderedArray[0][1]) + " uses.\n"
+                 "2. " + orderedArray[1][0] + " - " + str(orderedArray[1][1]) + " uses.\n"
+                 "3. " + orderedArray[2][0] + " - " + str(orderedArray[2][1]) + " uses.\n"
+                 "4. " + orderedArray[3][0] + " - " + str(orderedArray[3][1]) + " uses.\n"
+                 "5. " + orderedArray[4][0] + " - " + str(orderedArray[4][1]) + " uses.\n\n"
+                 "View the entire list here: " + gistURL
             )
 
     api.update_status(tweet)
