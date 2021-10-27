@@ -345,7 +345,8 @@ def sendTweet(orderedArray, gistURL, artist, numWords):
     auth.set_access_token(tokens[3], tokens[4])
     api = tweepy.API(auth)
     if len(artist) == 3:
-        tweet = ("Top 5 words used by " + artist[1] + " (" + artist[2] + ")" + "\n\n"
+        tweet = ("Top 5 words used by " + artist[1] + "\n"
+                 "(" + artist[2] + ")" + "\n\n"
                  "1. " + orderedArray[0][0] + " - " + str(orderedArray[0][1]) + " uses.\n"
                  "2. " + orderedArray[1][0] + " - " + str(orderedArray[1][1]) + " uses.\n"
                  "3. " + orderedArray[2][0] + " - " + str(orderedArray[2][1]) + " uses.\n"
