@@ -1,7 +1,15 @@
-https://azlyrics.com/b/better.html,Better Than Ezra
-https://azlyrics.com/h/hopalong.html,Hop Along
-https://azlyrics.com/a/americanfootball.html,American Football
-https://azlyrics.com/d/drivebytruckers.html,Drive-By Truckers
-https://azlyrics.com/b/backseatlovers.html,Backseat Lovers
-https://azlyrics.com/k/kurtvile.html,Kurt Vile
-https://azlyrics.com/w/warondrugs.html,The War On Drugs
+https://azlyrics.com/a/arcadefire.html,Arcade Fire,@arcadefire
+https://azlyrics.com/s/shakeygraves.html,Shakey Graves,@ShakeyGraves
+https://azlyrics.com/p/pavement.html,Pavement,@pavement_band
+https://azlyrics.com/m/mallrat.html,Mallrat,@lilmallrat
+https://azlyrics.com/w/warondrugs.html,The War On Drugs,@TheWarOnDrugs
+https://azlyrics.com/g/glorioussons.html,The Glorious Sons,@TheGloriousSons
+https://azlyrics.com/w/weezer.html,Weezer,@Weezer
+https://azlyrics.com/d/dawes.html,Dawes,@dawestheband
+https://azlyrics.com/w/wilco.html,Wilco,@Wilco
+https://azlyrics.com/g/grizzlybear.html,Grizzly Bear,@grizzlybear
+https://azlyrics.com/d/drivebytruckers.html,Drive-By Truckers,@drivebytruckers
+https://azlyrics.com/b/backseatlovers.html,Backseat Lovers,@Backseat_Luv
+https://azlyrics.com/k/kurtvile.html,Kurt Vile,@therealkurtvile
+
+
