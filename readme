@@ -1,0 +1,150 @@
+"""
+Kendel Tatsak
+7/28/2021
+
+module: azapi
+
+Functions
+---------
+
+getLyrics(url)
+    Get an array of strings containing each word in a song in sequential order.
+
+    Args:
+        url: str
+            link to the webpage containing the lyrics to a certain song.
+            the format of the link is 'https://azlyrics.com/lyrics/artistName/songName.html'
+    
+    returns:
+        list : an array of strings containing each word in a song in sequential order.
+
+
+getSongs(url)
+    Get an array of strings containing links to all of the songs in an Artist's catalog on azlyrics.com. 
+
+    Args:
+        url: str
+        link to the webpage listing the artist's catalog.
+        The format of the link is https://azlyrics.com/firstInitial/artistName.html
+            example: https://azlyrics.com/b/beyonce.html
+
+    Returns:
+        list : an array of strings containing the links to the artist's songs.
+
+
+removeSpecialCharactersPlusLower(array)
+    Get an array of strings set to lowercase and with common special characters removed.
+       
+    Args:
+        array: list
+            array of strings.
+
+    Returns:
+        list : an array of strings with some common special characters removed.
+
+
+addToDict(array)
+    Add to global dictionary with key value pairs containing a word and its number of occurances in an array.
+
+    Args:
+        array: list
+            array of strings.
+
+    Returns:
+        NONE
+
+
+checkIfInMostCommonWordsArray(word)
+    Accepts a sring and checks if it exists in constant array FILTEREDWORDS.
+
+    Args:
+        word: str
+            string to compare against FILTEREDWORDS array.
+
+    Returns:
+        Boolean : True if word exists in array, False if it does not exist in array.
+
+getOrderedArray()
+    Get 2D array with each element containing the key value pair from global dictionary.
+    Array is ordered from high to low using the int in each index.
+
+    Args:
+        NONE
+
+    Returns:
+        list : a 2D array with each index containing a string and an int.
+
+
+getRandomArtist()
+    Get a link to a webpage containing a random artist's music catalog.
+    The format of the link is https://azlyrics.com/firstInitial/artistName.html
+        example: https://azlyrics.com/b/beyonce.html
+
+    Args:
+        NONE
+
+    Returns:
+        list : an array with the url in the [0] index and the name of the artist in the [1] index.
+
+
+sendToFile(orderedArray, artistName, numSongs)
+    create a text file in the directory ..\frequentlyMost\lyrics
+
+    Args:
+        orderedArray: list
+            a 2D array with each index containing a string and an int.
+        
+        artistName: str
+            the name of the artist.
+        
+        numSongs: int
+            the number of songs scanned.
+    
+    Returns:
+        str : the name of the file created.
+
+
+postGist(fileName)
+    create a post on gist.github.com containing a text file.
+
+    Args:
+        fileName: str
+            name and location of the file to be uploaded.
+    
+    Returns:
+        str : url to the gist created on gist.github.com
+
+
+sendTweet(orderedArray, gistURL, artist, numWords)
+    Send tweet containing name of artist, number of songs scanned, top 5 words, and link to gist.
+
+    Args:
+        orderedArray: list
+            2D array of words and ints ordered by the ints in index [][1].
+        
+        gistURL: str
+            link to the gist on gist.github.com.
+
+        artist: str
+            name of the artist.
+        
+        numWords: int
+            the number of songs scanned.
+    
+    Returns:
+        NONE
+
+
+sendErrorEmail(functionName, e)
+    Send email containing name of the function where the exception occured and the exception itself.
+
+    Args:
+        functionName: str
+            name of funciton where the exception occured.
+
+        e: Object Exception
+            exception thrown.
+
+    Returns:
+        NONE
+"""

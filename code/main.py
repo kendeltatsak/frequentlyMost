@@ -31,4 +31,4 @@ orderedArray = azapi.getOrderedArray()
 
 fileName = azapi.sendToFile(orderedArray, artist[1], len(arrayOfLinks))
 gistURL = azapi.postGist(fileName)
-azapi.sendTweet(orderedArray, gistURL, artist[1], len(arrayOfLinks))
+azapi.sendTweet(orderedArray, gistURL, artist, len(arrayOfLinks))
