@@ -265,13 +265,7 @@ class Artist(AzlyricsAPI):
         return [self.url, self.name, self.handle]
 
 
-
-
 if __name__ == '__main__':
-    
-    #a = AzlyricsAPI.getRandomArtist()
-    #print(AzlyricsAPI.getSongs(a.get_url()))
-    #print(AzlyricsAPI.getLyrics('https://azlyrics.com/lyrics/cravity/myturn.html'))
     
     artist = AzlyricsAPI.getRandomArtist()
     print(artist.get_all())
