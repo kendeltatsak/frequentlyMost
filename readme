@@ -1,10 +1,12 @@
 """
-Kendel Tatsak
-7/28/2021
 
-module: azapi
+This is a Twitter bot that tweets an ordered list of the most used words by a singer/band.
+@frequentlyMost
 
-Functions
+
+Class: AzlyricsAPI
+
+Methods
 ---------
 
 getLyrics(url)
