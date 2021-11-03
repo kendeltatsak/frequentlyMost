@@ -13,6 +13,8 @@ import tweepy
 import sys
 import keyring
 import time
+import sqlite3
+import datetime
 
 
 class AzlyricsAPI:
@@ -199,6 +201,7 @@ class AzlyricsAPI:
         r = requests.post(url=url, headers=headers, data=json.dumps(data))
         return r.json()['html_url']
     
+    
     @staticmethod
     def twitterLogin():
         with open('/etc/tokens.txt', 'r') as file:
@@ -213,7 +216,7 @@ class AzlyricsAPI:
     def sendTweet(api, orderedArray, gistURL, artist, numWords):
         if artist.get_handle():
             tweet = ("Top 5 words used by " + artist.get_name() + "\n"
-                     "(" + artist.get_handle() + ")" + "\n\n"
+                     "(@" + artist.get_handle() + ")" + "\n\n"
                      "1. " + orderedArray[0][0] + " - " + str(orderedArray[0][1]) + " uses.\n"
                      "2. " + orderedArray[1][0] + " - " + str(orderedArray[1][1]) + " uses.\n"
                      "3. " + orderedArray[2][0] + " - " + str(orderedArray[2][1]) + " uses.\n"
@@ -230,14 +233,50 @@ class AzlyricsAPI:
                      "5. " + orderedArray[4][0] + " - " + str(orderedArray[4][1]) + " uses.\n\n"
                      "View the entire list here: " + gistURL
                 )
-        api.update_status(tweet)
-        return api
+        
+        return api.update_status(tweet)
         
         
     @staticmethod
     def followUser(artist, api):
         api.create_friendship(screen_name=artist.get_handle())
         
+        
+    @staticmethod
+    def createDatabase():
+        conn = sqlite3.connect('../tweets.db')
+        c = conn.cursor()
+        sqlCode = ("""
+                CREATE TABLE tweets (
+                id INTEGER PRIMARY KEY,
+                id_str TEXT,
+                created_at TEXT,
+                at_user TEXT,
+                text TEXT,
+                user TEXT,
+                num_replies INT
+                )
+                """)
+        
+        c.execute(sqlCode)
+        conn.commit()
+        conn.close()
+        
+        
+    @staticmethod
+    def addToDatabase(tweet, artist):
+        conn = sqlite3.connect('../tweets.db')
+        c = conn.cursor()
+        sqlCode = f"""
+                INSERT INTO tweets (id_str, created_at, at_user, text, user, num_replies)
+                VALUES ('{tweet.id_str}', '{str(tweet.created_at).strip('+00:00')}',
+                '{artist.get_handle()}','{tweet.text}', '{tweet.user.screen_name}', 0)
+                """
+        
+        c.execute(sqlCode)
+        conn.commit()
+        conn.close()
+            
     
     @staticmethod
     def sendErrorEmail(functionName, e):
@@ -271,12 +310,9 @@ class Artist(AzlyricsAPI):
     
     def get_all(self):
         return [self.url, self.name, self.handle]
-
-
-
+    
 
 if __name__ == '__main__':
-    
     artist = AzlyricsAPI.getRandomArtist()
     print(artist.get_all())
     arrayOfLinks = AzlyricsAPI.getSongs(artist.get_url())
@@ -289,7 +325,7 @@ if __name__ == '__main__':
         time.sleep(random.randint(10, 20))
         
         count += 1
-        print("1 of " + str(len(arrayOfLinks)) + ": " + link)
+        print(str(count) + " of " + str(len(arrayOfLinks)) + ": " + link)
 
     orderedArray = AzlyricsAPI.getOrderedArray()
 
@@ -297,16 +333,24 @@ if __name__ == '__main__':
     gistURL = AzlyricsAPI.postGist(fileName)
     
     api = AzlyricsAPI.twitterLogin()
-    AzlyricsAPI.sendTweet(api, orderedArray, gistURL, artist, len(arrayOfLinks))
+    tweet = AzlyricsAPI.sendTweet(api, orderedArray, gistURL, artist, len(arrayOfLinks))
     
     
     if artist.get_handle():
         AzlyricsAPI.followUser(artist, api)
         print("followed: " + artist.get_handle())
+        AzlyricsAPI.addToDatabase(tweet, artist)
+        print("added tweet to database")
+    
+            
 
     
 #     artist = AzlyricsAPI.getRandomArtist()
 #     api = AzlyricsAPI.twitterLogin()
 #     statuses = api.home_timeline()
-#     print(statuses[0].created_at)
+#     print(type(statuses[0].created_at))
+
+    
+    
+    
 
