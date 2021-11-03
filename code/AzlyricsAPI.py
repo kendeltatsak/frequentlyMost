@@ -199,15 +199,18 @@ class AzlyricsAPI:
         r = requests.post(url=url, headers=headers, data=json.dumps(data))
         return r.json()['html_url']
     
-    
     @staticmethod
-    def sendTweet(orderedArray, gistURL, artist, numWords):
+    def twitterLogin():
         with open('/etc/tokens.txt', 'r') as file:
             tokens = file.read().splitlines()
 
         auth = tweepy.OAuthHandler(tokens[1], tokens[2])
         auth.set_access_token(tokens[3], tokens[4])
-        api = tweepy.API(auth)
+        
+        return tweepy.API(auth)
+    
+    @staticmethod
+    def sendTweet(api, orderedArray, gistURL, artist, numWords):
         if artist.get_handle():
             tweet = ("Top 5 words used by " + artist.get_name() + "\n"
                      "(" + artist.get_handle() + ")" + "\n\n"
@@ -227,8 +230,13 @@ class AzlyricsAPI:
                      "5. " + orderedArray[4][0] + " - " + str(orderedArray[4][1]) + " uses.\n\n"
                      "View the entire list here: " + gistURL
                 )
-
         api.update_status(tweet)
+        return api
+        
+        
+    @staticmethod
+    def followUser(artist, api):
+        api.create_friendship(screen_name=artist.get_handle())
         
     
     @staticmethod
@@ -265,6 +273,8 @@ class Artist(AzlyricsAPI):
         return [self.url, self.name, self.handle]
 
 
+
+
 if __name__ == '__main__':
     
     artist = AzlyricsAPI.getRandomArtist()
@@ -285,5 +295,18 @@ if __name__ == '__main__':
 
     fileName = AzlyricsAPI.sendToFile(orderedArray, artist.get_name(), len(arrayOfLinks))
     gistURL = AzlyricsAPI.postGist(fileName)
-    AzlyricsAPI.sendTweet(orderedArray, gistURL, artist, len(arrayOfLinks))
+    
+    api = AzlyricsAPI.twitterLogin()
+    AzlyricsAPI.sendTweet(api, orderedArray, gistURL, artist, len(arrayOfLinks))
+    
+    
+    if artist.get_handle():
+        AzlyricsAPI.followUser(artist, api)
+        print("followed: " + artist.get_handle())
+
+    
+#     artist = AzlyricsAPI.getRandomArtist()
+#     api = AzlyricsAPI.twitterLogin()
+#     statuses = api.home_timeline()
+#     print(statuses[0].created_at)
 
