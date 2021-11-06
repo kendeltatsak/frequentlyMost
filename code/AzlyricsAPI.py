@@ -313,6 +313,7 @@ class Artist(AzlyricsAPI):
     
 
 if __name__ == '__main__':
+    
     artist = AzlyricsAPI.getRandomArtist()
     print(artist.get_all())
     arrayOfLinks = AzlyricsAPI.getSongs(artist.get_url())
