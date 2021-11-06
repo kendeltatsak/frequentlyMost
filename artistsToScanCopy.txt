@@ -1,15 +1,15 @@
-https://azlyrics.com/p/pinegrove.html,Pinegrove,@PinegroveBand
-https://azlyrics.com/m/mewithoutyou.html,mewithoutyou,@mewithoutYou
-https://azlyrics.com/b/bandofhorses.html,Band of Horses,@bandofhorses
-https://azlyrics.com/m/mymorningjacket.html,My Morning Jacket,@mymorningjacket
-https://azlyrics.com/f/fouryearstrong.html,Four Year Strong,@fouryearstrong
-https://azlyrics.com/g/glorioussons.html,The Glorious Sons,@TheGloriousSons
-https://azlyrics.com/w/weezer.html,Weezer,@Weezer
-https://azlyrics.com/d/dawes.html,Dawes,@dawestheband
-https://azlyrics.com/w/wilco.html,Wilco,@Wilco
-https://azlyrics.com/g/grizzlybear.html,Grizzly Bear,@grizzlybear
-https://azlyrics.com/d/drivebytruckers.html,Drive-By Truckers,@drivebytruckers
-https://azlyrics.com/b/backseatlovers.html,Backseat Lovers,@Backseat_Luv
-https://azlyrics.com/k/kurtvile.html,Kurt Vile,@therealkurtvile
+https://azlyrics.com/m/mewithoutyou.html,mewithoutyou,mewithoutYou
+https://azlyrics.com/m/mannequinpussy.html,Mannequin Pussy,mannequinpussy
+https://azlyrics.com/b/bandofhorses.html,Band of Horses,bandofhorses
+https://azlyrics.com/m/mymorningjacket.html,My Morning Jacket,mymorningjacket
+https://azlyrics.com/f/fouryearstrong.html,Four Year Strong,fouryearstrong
+https://azlyrics.com/g/glorioussons.html,The Glorious Sons,TheGloriousSons
+https://azlyrics.com/w/weezer.html,Weezer,Weezer
+https://azlyrics.com/d/dawes.html,Dawes,dawestheband
+https://azlyrics.com/w/wilco.html,Wilco,Wilco
+https://azlyrics.com/g/grizzlybear.html,Grizzly Bear,grizzlybear
+https://azlyrics.com/d/drivebytruckers.html,Drive-By Truckers,drivebytruckers
+https://azlyrics.com/b/backseatlovers.html,Backseat Lovers,Backseat_Luv
+https://azlyrics.com/k/kurtvile.html,Kurt Vile,therealkurtvile
 
 
