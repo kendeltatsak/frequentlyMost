@@ -269,7 +269,7 @@ class AzlyricsAPI:
         c = conn.cursor()
         sqlCode = f"""
                 INSERT INTO tweets (id_str, created_at, at_user, text, user, num_replies)
-                VALUES ('{tweet.id_str}', '{str(tweet.created_at).strip('+00:00')}',
+                VALUES ('{tweet.id_str}', '{tweet.created_at}',
                 '{artist.get_handle()}','{tweet.text}', '{tweet.user.screen_name}', 0)
                 """
         
@@ -335,7 +335,7 @@ if __name__ == '__main__':
     
     api = AzlyricsAPI.twitterLogin()
     tweet = AzlyricsAPI.sendTweet(api, orderedArray, gistURL, artist, len(arrayOfLinks))
-    
+    tweet.created_at = tweet.created_at.strftime("%Y-%m-%d %H:%M:%S")
     
     if artist.get_handle():
         AzlyricsAPI.followUser(artist, api)

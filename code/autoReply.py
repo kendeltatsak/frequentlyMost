@@ -56,39 +56,39 @@ class Database:
 
 if __name__ == '__main__':
     
-    try:
-        print(f'executed at {dt.datetime.utcnow()}')
-        api = AzlyricsAPI.twitterLogin()
-        statuses = api.home_timeline()
-        
-        for status in statuses:
-        
-            if str(status.user.screen_name) != 'FrequentlyMost':
-
-                sqlCode = f"SELECT * FROM tweets WHERE LOWER(at_user) LIKE LOWER('%{status.user.screen_name}%')"
-                tweet = Database.selectFromDB(sqlCode)
-                
-                if tweet:
-                    
-                    timeElapsed = dt.datetime.utcnow().replace(tzinfo=pytz.utc) - status.created_at
-                    
-                    if timeElapsed.seconds < 300 and tweet.num_replies < 3:
-                        
-                        replyTweet = f"https://twitter.com/{tweet.user}/status/{tweet.str_id}"
-                        api.update_status(status=replyTweet, in_reply_to_status_id = status.id_str,
-                                          auto_populate_reply_metadata=True)
-                        
-                        
-                        sqlCode = f"""UPDATE tweets
-                                      SET num_replies = {tweet.num_replies + 1}
-                                      WHERE id = {tweet.id}"""
-                        Database.updateDB(tweet, sqlCode)
-                        
-                        
-                        print(f"replied to {status.user.screen_name} with tweet id {tweet.str_id} at {dt.datetime.utcnow()} UTC+00:00.")
+    #try:
+    print(f'executed at {dt.datetime.utcnow()}.')
+    api = AzlyricsAPI.twitterLogin()
+    statuses = api.home_timeline()
     
-    except Exception as e:
-        print(e)
+    for status in statuses:
+    
+        if str(status.user.screen_name) != 'FrequentlyMost':
+
+            sqlCode = f"SELECT * FROM tweets WHERE LOWER(at_user) LIKE LOWER('%{status.user.screen_name}%')"
+            tweet = Database.selectFromDB(sqlCode)
+            
+            if tweet:
+                
+                timeElapsed = dt.datetime.utcnow().replace(tzinfo=pytz.utc) - status.created_at
+                
+                if timeElapsed.seconds < 300 and tweet.num_replies < 3:
+                    
+                    replyTweet = f"https://twitter.com/{tweet.user}/status/{tweet.str_id}"
+                    api.update_status(status=replyTweet, in_reply_to_status_id = status.id_str,
+                                      auto_populate_reply_metadata=True)
+                    
+                    
+                    sqlCode = f"""UPDATE tweets
+                                  SET num_replies = {tweet.num_replies + 1}
+                                  WHERE id = {tweet.id}"""
+                    Database.updateDB(tweet, sqlCode)
+                    
+                    
+                    print(f"replied to {status.user.screen_name} with tweet id {tweet.str_id} at {dt.datetime.utcnow()} UTC+00:00.")
+    
+    #except Exception as e:
+     #   print(e)
     
     
     
