@@ -1,11 +1,24 @@
-https://azlyrics.com/m/mymorningjacket.html,My Morning Jacket,mymorningjacket
-https://azlyrics.com/f/fouryearstrong.html,Four Year Strong,fouryearstrong
-https://azlyrics.com/g/glorioussons.html,The Glorious Sons,TheGloriousSons
-https://azlyrics.com/w/weezer.html,Weezer,Weezer
-https://azlyrics.com/d/dawes.html,Dawes,dawestheband
-https://azlyrics.com/w/wilco.html,Wilco,Wilco
-https://azlyrics.com/g/grizzlybear.html,Grizzly Bear,grizzlybear
-https://azlyrics.com/d/drivebytruckers.html,Drive-By Truckers,drivebytruckers
+https://azlyrics.com/d/dodieclark.html,dodie,doddleoddle
+https://azlyrics.com/s/sandyalexg.html,(Sandy) Alex G,SANDYalexg
+https://azlyrics.com/s/spose.html,Spose,spizzyspose
+https://azlyrics.com/l/ladylamb.html,Lady Lamb,ladylambjams
+https://azlyrics.com/d/dominicfike.html,Dominic Fike,None
+https://azlyrics.com/s/sjowgren.html,Sjowgren,sjowgren
+https://azlyrics.com/s/sancisco.html,San Cisco,SanCiscoMusic
+https://azlyrics.com/j/junglegiants.html,The Jungle Giants,thejunglegiants
+https://azlryics.com/m/middlekids.html,Middle Kids,MiddleKidsMusic
+https://azlyrics.com/w/watsky.html,Watsky,gwatsky
+https://azlyrics.com/g/gangofyouths.html,gang of youths,gangofyouths
+https://azlyrics.com/j/jackriver.html,Jack River,jackrivermusic
+https://azlyrics.com/p/preatures.html,The Preatures,ThePreatures
+https://azlyrics.com/g/ghostofpaulrevere.html,The Ghost of Paul Revere,ghostpaulrevere
+https://azlyrics.com/b/ballparkmusic.html,Ball Park Music,ballparkmusic
+https://azlryics.com/c/cloudcontrol.html,Cloud Control,cloud_control
+https://azlyrics.com/c/cosmosmidnight.html,Cosmo's Midnight,CosmosMidnight
+https://azlyrics.com/h/holyholy.html,Holy Holy,holyholymusic
+https://azlyrics.com/j/japanesehouse.html,The Japanese House,Japanesehouse
+https://azlyrics.com/b/benee.html,BENEE,BENNEMUSIC
+https://azlyrics.com/d/dopelemon.html,DOPE LEMON,dopelemonmusic
 https://azlyrics.com/b/backseatlovers.html,Backseat Lovers,Backseat_Luv
 https://azlyrics.com/k/kurtvile.html,Kurt Vile,therealkurtvile
 
