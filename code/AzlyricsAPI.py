@@ -15,6 +15,7 @@ import keyring
 import time
 import sqlite3
 import datetime
+from fake_useragent import UserAgent
 
 
 class AzlyricsAPI:
@@ -28,7 +29,7 @@ class AzlyricsAPI:
                     'out', 'many', 'then', 'them', 'these', 'so', 'some', 'our', 'youll', 'where', 'theyre',
                     'her', 'would', 'make', 'like', 'him', 'into', 'time', 'has', 'look', 'youve', 'theres',
                     'two', 'more', 'go', 'see', 'no', 'way', 'could', 'just', 'cause', 'got', 'theyve',
-                    'still', 'my', 'than', 'gonna', 'been', 'call', 'who', 'hes', 'shes', 'whos',
+                    'still', 'my', 'than', 'gonna', 'been', 'call', 'who', 'hes', 'shes', 'whos', 'na',
                     'its', 'now', 'find', 'day', 'did', 'get', 'come', 'made', 'us', 'our', 'well',
                     'may', 'part', 'dont', 'youre', 'too', 'didnt', 'ive', 'why', 'cant', 'wont',
                     'cause', 'ill', 'itll', 'off', 'im', 'me', 'am', 'yeah', 'oh', '-', '- -', '– -',
@@ -108,7 +109,9 @@ class AzlyricsAPI:
 
             arrayLinksToArtistsSongs = []
             for song in songs:
-                arrayLinksToArtistsSongs.append([song.get('href')][0].replace("..", "https://azlyrics.com"))
+                s = 'https://azlyrics.com' + song.get('href')
+                arrayLinksToArtistsSongs.append(s)
+                #arrayLinksToArtistsSongs.append([song.get('href')][0].replace("..", "https://azlyrics.com"))
             
             random.shuffle(arrayLinksToArtistsSongs)
             return list(set(arrayLinksToArtistsSongs))
@@ -291,6 +294,7 @@ class AzlyricsAPI:
             message = 'error in ' + functionName + '. Error:\n\n' + str(e)
             print(message)
             sys.exit(message)
+            
                     
 
 class Artist(AzlyricsAPI):
@@ -342,16 +346,5 @@ if __name__ == '__main__':
         print("followed: " + artist.get_handle())
         AzlyricsAPI.addToDatabase(tweet, artist)
         print("added tweet to database")
-    
-            
-
-    
-#     artist = AzlyricsAPI.getRandomArtist()
-#     api = AzlyricsAPI.twitterLogin()
-#     statuses = api.home_timeline()
-#     print(type(statuses[0].created_at))
-
-    
-    
     
 
