@@ -23,15 +23,15 @@ class AzlyricsAPI:
     uniqueWordsDict = {}
     FILTEREDWORDS = ['the', 'of', 'and', 'a', 'to', 'in', 'is', 'you', 'that', 'it', 'he', 'thats',
                     'was', 'for', 'on', 'are', 'as', 'with', 'his', 'they', 'i', 'at', 'be', 'know', 
-                    'this', 'have', 'from', 'or', 'one', 'had', 'by', 'word', 'but', 'not', 'aint',
+                    'this', 'have', 'from', 'or', 'one', 'had', 'by', 'word', 'but', 'not', 'aint', 'na',
                     'what', 'all', 'were', 'we', 'when', 'your', 'can', 'said', 'there', 'use', 'man',
                     'an', 'each', 'which', 'she', 'do', 'how', 'their', 'if', 'will', 'up', 'say', 'id', 
                     'out', 'many', 'then', 'them', 'these', 'so', 'some', 'our', 'youll', 'where', 'theyre',
                     'her', 'would', 'make', 'like', 'him', 'into', 'time', 'has', 'look', 'youve', 'theres',
-                    'two', 'more', 'go', 'see', 'no', 'way', 'could', 'just', 'cause', 'got', 'theyve',
-                    'still', 'my', 'than', 'gonna', 'been', 'call', 'who', 'hes', 'shes', 'whos', 'na',
-                    'its', 'now', 'find', 'day', 'did', 'get', 'come', 'made', 'us', 'our', 'well',
-                    'may', 'part', 'dont', 'youre', 'too', 'didnt', 'ive', 'why', 'cant', 'wont',
+                    'two', 'more', 'go', 'see', 'no', 'way', 'could', 'just', 'cause', 'got', 'theyve', 'itd',
+                    'still', 'my', 'than', 'gonna', 'been', 'call', 'who', 'hes', 'shes', 'whos', 'na', 'em',
+                    'its', 'now', 'find', 'day', 'did', 'get', 'come', 'made', 'us', 'our', 'well', 'whoa',
+                    'may', 'part', 'dont', 'youre', 'too', 'didnt', 'ive', 'why', 'cant', 'wont', 'woah',
                     'cause', 'ill', 'itll', 'off', 'im', 'me', 'am', 'yeah', 'oh', '-', '- -', '– -',
                     'couldve', 'shouldve', 'thatll', 'want', 'wanna', 'la', 'da', 'ba', 'le', 'ok']
     

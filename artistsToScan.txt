@@ -1,17 +1,12 @@
-https://azlryics.com/m/middlekids.html,Middle Kids,MiddleKidsMusic
-https://azlyrics.com/w/watsky.html,Watsky,gwatsky
-https://azlyrics.com/g/gangofyouths.html,gang of youths,gangofyouths
-https://azlyrics.com/j/jackriver.html,Jack River,jackrivermusic
-https://azlyrics.com/p/preatures.html,The Preatures,ThePreatures
-https://azlyrics.com/g/ghostofpaulrevere.html,The Ghost of Paul Revere,ghostpaulrevere
-https://azlyrics.com/b/ballparkmusic.html,Ball Park Music,ballparkmusic
-https://azlryics.com/c/cloudcontrol.html,Cloud Control,cloud_control
-https://azlyrics.com/c/cosmosmidnight.html,Cosmo's Midnight,CosmosMidnight
-https://azlyrics.com/h/holyholy.html,Holy Holy,holyholymusic
-https://azlyrics.com/j/japanesehouse.html,The Japanese House,Japanesehouse
-https://azlyrics.com/b/benee.html,BENEE,BENNEMUSIC
-https://azlyrics.com/d/dopelemon.html,DOPE LEMON,dopelemonmusic
-https://azlyrics.com/b/backseatlovers.html,Backseat Lovers,Backseat_Luv
-https://azlyrics.com/k/kurtvile.html,Kurt Vile,therealkurtvile
-
-
+https://www.azlyrics.com/s/sufjanstevens.html,Sufjan Stevens,sufjanstevens
+https://www.azlyrics.com/s/sleighbells.html,Sleigh Bells,sleighbells
+https://www.azlyrics.com/f/fayewebster.html,Faye Webster,fayewebsters
+https://www.azlyrics.com/h/hatchie.html,Hatchie,hihatchie
+https://www.azlyrics.com/g/girlpool.html,Girlpool,girlpool
+https://www.azlyrics.com/j/japanesebreakfast.html,Japanese Breakfast,Jbrekkie
+https://www.azlyrics.com/c/chastitybelt.html,Chastity Belt,CHAST1TYBELT
+https://www.azlyrics.com/n/noahandthewhale.html,Noah and the Whale,noahandthewhale
+https://www.azlyrics.com/c/coldwarkids.html,Cold War Kids,ColdWarKids
+https://www.azlyrics.com/i/itlookssad.html,It Looks Sad.,itlookssad
+https://www.azlyrics.com/m/mooseblood.html,Moose Blood,mooseblooduk
+https://www.azlyrics.com/d/dearandtheheadlights.html,Dear And The Headlights,
