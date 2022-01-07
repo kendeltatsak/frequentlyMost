@@ -1,12 +1,30 @@
-https://www.azlyrics.com/s/sufjanstevens.html,Sufjan Stevens,sufjanstevens
-https://www.azlyrics.com/s/sleighbells.html,Sleigh Bells,sleighbells
-https://www.azlyrics.com/f/fayewebster.html,Faye Webster,fayewebsters
-https://www.azlyrics.com/h/hatchie.html,Hatchie,hihatchie
-https://www.azlyrics.com/g/girlpool.html,Girlpool,girlpool
-https://www.azlyrics.com/j/japanesebreakfast.html,Japanese Breakfast,Jbrekkie
-https://www.azlyrics.com/c/chastitybelt.html,Chastity Belt,CHAST1TYBELT
-https://www.azlyrics.com/n/noahandthewhale.html,Noah and the Whale,noahandthewhale
-https://www.azlyrics.com/c/coldwarkids.html,Cold War Kids,ColdWarKids
-https://www.azlyrics.com/i/itlookssad.html,It Looks Sad.,itlookssad
-https://www.azlyrics.com/m/mooseblood.html,Moose Blood,mooseblooduk
-https://www.azlyrics.com/d/dearandtheheadlights.html,Dear And The Headlights,
+https://www.azlyrics.com/c/carolinepolachek.html,Caroline Polachek,carolineplz
+https://www.azlyrics.com/h/haim.html,HAIM,HAIMtheband
+https://www.azlyrics.com/f/fatherjohnmisty.html,Father John Misty,CanFlub
+https://www.azlyrics.com/b/builttospill.html,Built to Spill,Built_2_Spill
+https://www.azlyrics.com/b/bigthief.html,Big Thief,bigthiefmusic
+https://www.azlyrics.com/b/beths.html,The Beths,LizstokedStokes
+https://www.azlyrics.com/c/charlybliss.html,Charly Bliss,charlybliss
+https://www.azlyrics.com/s/stvincent.html,St. Vincent,st_vincent
+https://www.azlyrics.com/b/beachhouse.html,Beach House,BeaccchHoussse
+https://www.azlyrics.com/g/grimes.html,Grimes,Grimezsz
+https://www.azlyrics.com/m/mitski.html,Mitski,mitskileaks
+https://www.azlyrics.com/w/waxahatchee.html,Waxahatchee,k_crutchfield
+https://www.azlyrics.com/g/guidedbyvoices.html,Guided By Voices,_GuidedByVoices
+https://www.azlyrics.com/d/dinosaurjr.html,Dinosaur Jr.,dinosaurjr
+https://www.azlyrics.com/s/sonicyouth.html,Sonic Youth,thesonicyouth
+https://www.azlyrics.com/k/kurtvile.html,Kurt Vile,therealkurtvile
+https://www.azlyrics.com/c/catpower.html,Cat Power,CATPOWER
+https://www.azlyrics.com/f/futureislands.html,Future Islands,futureislands
+https://www.azlyrics.com/c/carolinerose.html,Caroline Rose,CarolineRoseFM
+https://www.azlyrics.com/y/yvestumor.html,Yves Tumor,YvesTumor
+https://www.azlyrics.com/c/chvrches.html,CHVRCHES,CHVRCHES
+https://www.azlyrics.com/s/seaway.html,Seaway,seawayband
+https://www.azlyrics.com/s/simplecreatures.html,Simple Creatures,simplecreatures
+https://www.azlyrics.com/w/waterparks.html,Waterparks,waterparks
+https://www.azlyrics.com/h/holdingabsence.html,Holding Absence,HoldingAbsence
+https://www.azlyrics.com/s/standatlantic.html,Stand Atlantic,standatlantic
+https://www.azlyrics.com/w/withconfidence.html,With Confidence,withconfidence_
+
+
+https://www.azlyrics.com/c/charlixcx.html,Charli XCX,charli_xcx

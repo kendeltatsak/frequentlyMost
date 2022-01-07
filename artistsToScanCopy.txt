@@ -1,17 +1,30 @@
-https://azlryics.com/m/middlekids.html,Middle Kids,MiddleKidsMusic
-https://azlyrics.com/w/watsky.html,Watsky,gwatsky
-https://azlyrics.com/g/gangofyouths.html,gang of youths,gangofyouths
-https://azlyrics.com/j/jackriver.html,Jack River,jackrivermusic
-https://azlyrics.com/p/preatures.html,The Preatures,ThePreatures
-https://azlyrics.com/g/ghostofpaulrevere.html,The Ghost of Paul Revere,ghostpaulrevere
-https://azlyrics.com/b/ballparkmusic.html,Ball Park Music,ballparkmusic
-https://azlryics.com/c/cloudcontrol.html,Cloud Control,cloud_control
-https://azlyrics.com/c/cosmosmidnight.html,Cosmo's Midnight,CosmosMidnight
-https://azlyrics.com/h/holyholy.html,Holy Holy,holyholymusic
-https://azlyrics.com/j/japanesehouse.html,The Japanese House,Japanesehouse
-https://azlyrics.com/b/benee.html,BENEE,BENNEMUSIC
-https://azlyrics.com/d/dopelemon.html,DOPE LEMON,dopelemonmusic
-https://azlyrics.com/b/backseatlovers.html,Backseat Lovers,Backseat_Luv
-https://azlyrics.com/k/kurtvile.html,Kurt Vile,therealkurtvile
+https://www.azlyrics.com/c/carolinepolachek.html,Caroline Polachek,carolineplz
+https://www.azlyrics.com/h/haim.html,HAIM,HAIMtheband
+https://www.azlyrics.com/f/fatherjohnmisty.html,Father John Misty,CanFlub
+https://www.azlyrics.com/b/builttospill.html,Built to Spill,Built_2_Spill
+https://www.azlyrics.com/b/bigthief.html,Big Thief,bigthiefmusic
+https://www.azlyrics.com/b/beths.html,The Beths,LizstokedStokes
+https://www.azlyrics.com/c/charlybliss.html,Charly Bliss,charlybliss
+https://www.azlyrics.com/s/stvincent.html,St. Vincent,st_vincent
+https://www.azlyrics.com/b/beachhouse.html,Beach House,BeaccchHoussse
+https://www.azlyrics.com/g/grimes.html,Grimes,Grimezsz
+https://www.azlyrics.com/m/mitski.html,Mitski,mitskileaks
+https://www.azlyrics.com/w/waxahatchee.html,Waxahatchee,k_crutchfield
+https://www.azlyrics.com/g/guidedbyvoices.html,Guided By Voices,_GuidedByVoices
+https://www.azlyrics.com/d/dinosaurjr.html,Dinosaur Jr.,dinosaurjr
+https://www.azlyrics.com/s/sonicyouth.html,Sonic Youth,thesonicyouth
+https://www.azlyrics.com/k/kurtvile.html,Kurt Vile,therealkurtvile
+https://www.azlyrics.com/c/catpower.html,Cat Power,CATPOWER
+https://www.azlyrics.com/f/futureislands.html,Future Islands,futureislands
+https://www.azlyrics.com/c/carolinerose.html,Caroline Rose,CarolineRoseFM
+https://www.azlyrics.com/y/yvestumor.html,Yves Tumor,YvesTumor
+https://www.azlyrics.com/c/chvrches.html,CHVRCHES,CHVRCHES
+https://www.azlyrics.com/s/seaway.html,Seaway,seawayband
+https://www.azlyrics.com/s/simplecreatures.html,Simple Creatures,simplecreatures
+https://www.azlyrics.com/w/waterparks.html,Waterparks,waterparks
+https://www.azlyrics.com/h/holdingabsence.html,Holding Absence,HoldingAbsence
+https://www.azlyrics.com/s/standatlantic.html,Stand Atlantic,standatlantic
+https://www.azlyrics.com/w/withconfidence.html,With Confidence,withconfidence_
 
 
+https://www.azlyrics.com/c/charlixcx.html,Charli XCX,charli_xcx
