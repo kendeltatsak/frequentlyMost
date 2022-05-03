@@ -61,13 +61,13 @@ class AzlyricsAPI:
         # get first line from text file
         with open('../artistsToScan.txt', 'r') as file:
             lines = file.read().splitlines()
-            if lines and lines[0] is not '':
+            if lines and lines[0] != '':
                 artist = lines[0].split(',')
 
         # delete first line from text file
         with open('../artistsToScan.txt', 'w') as file:
             i = 0
-            if lines and lines[0] is not '':
+            if lines and lines[0] != '':
                 for line in lines:
                     if i == 0:
                         pass
@@ -94,13 +94,13 @@ class AzlyricsAPI:
 
                 artist = arrayOfArtists[random.randint(0, len(arrayOfArtists)-1)]
         
-        return Artist(artist[0], artist[1]) if len(artist) is 2 else Artist(artist[0], artist[1], artist[2])
+        return Artist(artist[0], artist[1]) if len(artist) == 2 else Artist(artist[0], artist[1], artist[2])
     
     
     @staticmethod
     def getSongs(url):
         headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
-        mainPage = requests.get(url=url, headers=headers)
+        mainPage = requests.get(url=url)#, headers=headers)
         if mainPage.status_code != 200:
             sendErrorEmail('getSongs()', mainPage.status_code)
         else:
@@ -121,14 +121,17 @@ class AzlyricsAPI:
     def getLyrics(url):
         mainPage = None
         retryCount = 0
-        while mainPage is None:
-            if retryCount is 11:
-                sendErrorEmail('Error in getLyrics(). Retry count exceeded 10 tries.', retryCount)
+        while mainPage == None:
+            if retryCount == 3:
+                #sendErrorEmail('Error in getLyrics(). Retry count exceeded 3 tries.', retryCount)
+                return None
             else:
                 try:
                     mainPage = requests.get(url)
-                except:
+                except Exception as e:
                     print("connection error. Retrying in 20 seconds.")
+                    print(url)
+                    print(e)
                     time.sleep(20)
                     retryCount += 1
                 
@@ -174,7 +177,7 @@ class AzlyricsAPI:
             for i in range(len(orderedArray)):
                 line = str(i + 1) + '. ' + str(orderedArray[i][0]) + ' - ' + str(orderedArray[i][1])
                 
-                if orderedArray[i][1] is 1:
+                if orderedArray[i][1] == 1:
                     line = line + ' use.\n'
                 else:
                     line = line + ' uses.\n'
@@ -218,7 +221,7 @@ class AzlyricsAPI:
     @staticmethod
     def sendTweet(api, orderedArray, gistURL, artist, numWords):
         if artist.get_handle():
-            tweet = ("Top 5 words used by " + artist.get_name() + "\n"
+            tweet = ("Top 5 words used in " + artist.get_name() + " songs\n"
                      "(@" + artist.get_handle() + ")" + "\n\n"
                      "1. " + orderedArray[0][0] + " - " + str(orderedArray[0][1]) + " uses.\n"
                      "2. " + orderedArray[1][0] + " - " + str(orderedArray[1][1]) + " uses.\n"
@@ -228,7 +231,7 @@ class AzlyricsAPI:
                      "View the entire list here: " + gistURL
                     )
         else:
-            tweet = ("Top 5 words used by " + artist.get_name() + "\n\n"
+            tweet = ("Top 5 words used in " + artist.get_name() + " songs\n\n"
                      "1. " + orderedArray[0][0] + " - " + str(orderedArray[0][1]) + " uses.\n"
                      "2. " + orderedArray[1][0] + " - " + str(orderedArray[1][1]) + " uses.\n"
                      "3. " + orderedArray[2][0] + " - " + str(orderedArray[2][1]) + " uses.\n"
@@ -326,11 +329,13 @@ if __name__ == '__main__':
     count = 0
     for link in arrayOfLinks:
         song = AzlyricsAPI.getLyrics(link)
-        AzlyricsAPI.addToDict(song)
-        time.sleep(random.randint(10, 20))
-        
+        if song != None:
+            AzlyricsAPI.addToDict(song)
+            time.sleep(random.randint(10, 20))
+            print(str(count) + " of " + str(len(arrayOfLinks)) + ": " + link)
+        else:
+            print(str(count) + " of " + str(len(arrayOfLinks)) + ": SKIPPED " + link)
         count += 1
-        print(str(count) + " of " + str(len(arrayOfLinks)) + ": " + link)
 
     orderedArray = AzlyricsAPI.getOrderedArray()
 
