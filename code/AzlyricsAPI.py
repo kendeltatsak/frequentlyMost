@@ -11,10 +11,8 @@ import random
 import json
 import tweepy
 import sys
-import keyring
 import time
 import sqlite3
-import datetime
 from fake_useragent import UserAgent
 
 
@@ -190,7 +188,7 @@ class AzlyricsAPI:
     @staticmethod
     def postGist(fileName):
         url = "https://api.github.com/gists"
-        with open('/etc/tokens.txt', 'r') as file:
+        with open('./tokens.txt', 'r') as file:
             tokens = file.read().splitlines()
 
         headers = {'Authorization': 'token ' + tokens[0]}
@@ -210,7 +208,7 @@ class AzlyricsAPI:
     
     @staticmethod
     def twitterLogin():
-        with open('/etc/tokens.txt', 'r') as file:
+        with open('./tokens.txt', 'r') as file:
             tokens = file.read().splitlines()
 
         auth = tweepy.OAuthHandler(tokens[1], tokens[2])
