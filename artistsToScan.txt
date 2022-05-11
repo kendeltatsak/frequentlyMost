@@ -1,42 +1,73 @@
-https://www.azlyrics.com/c/carolinepolachek.html,Caroline Polachek,carolineplz
-https://www.azlyrics.com/h/haim.html,HAIM,HAIMtheband
-https://www.azlyrics.com/f/fatherjohnmisty.html,Father John Misty,CanFlub
-https://www.azlyrics.com/b/builttospill.html,Built to Spill,Built_2_Spill
-https://www.azlyrics.com/b/bigthief.html,Big Thief,bigthiefmusic
-https://www.azlyrics.com/b/beths.html,The Beths,LizstokedStokes
-https://www.azlyrics.com/c/charlybliss.html,Charly Bliss,charlybliss
-https://www.azlyrics.com/s/stvincent.html,St. Vincent,st_vincent
-https://www.azlyrics.com/b/beachhouse.html,Beach House,BeaccchHoussse
-https://www.azlyrics.com/g/grimes.html,Grimes,Grimezsz
-https://www.azlyrics.com/m/mitski.html,Mitski,mitskileaks
-https://www.azlyrics.com/c/charlixcx.html,Charli XCX,charli_xcx
-https://www.azlyrics.com/w/waxahatchee.html,Waxahatchee,k_crutchfield
-https://www.azlyrics.com/g/guidedbyvoices.html,Guided By Voices,_GuidedByVoices
-https://www.azlyrics.com/d/dinosaurjr.html,Dinosaur Jr.,dinosaurjr
-https://www.azlyrics.com/s/sonicyouth.html,Sonic Youth,thesonicyouth
-https://www.azlyrics.com/k/kurtvile.html,Kurt Vile,therealkurtvile
-https://www.azlyrics.com/c/catpower.html,Cat Power,CATPOWER
-https://www.azlyrics.com/f/futureislands.html,Future Islands,futureislands
-https://www.azlyrics.com/c/carolinerose.html,Caroline Rose,CarolineRoseFM
-https://www.azlyrics.com/y/yvestumor.html,Yves Tumor,YvesTumor
-https://www.azlyrics.com/c/chvrches.html,CHVRCHES,CHVRCHES
-https://www.azlyrics.com/s/seaway.html,Seaway,seawayband
-https://www.azlyrics.com/s/simplecreatures.html,Simple Creatures,simplecreatures
-https://www.azlyrics.com/w/waterparks.html,Waterparks,waterparks
-https://www.azlyrics.com/h/holdingabsence.html,Holding Absence,HoldingAbsence
-https://www.azlyrics.com/s/standatlantic.html,Stand Atlantic,standatlantic
-https://www.azlyrics.com/w/withconfidence.html,With Confidence,withconfidence_
-https://www.azlyrics.com/s/startingline.html,The Starting Line,TheStartingLine
-https://www.azlyrics.com/s/sensesfail.html,Senses Fail,SensesFail
-https://www.azlyrics.com/m/movielife.html,The Movielife,TheMovielifeNYC
-https://www.azlyrics.com/a/anarbor.html,Anarbor,Anarbor
-https://www.azlyrics.com/f/foreverthesickestkids.html,Forever The Sickest Kids,OFFICIALFTSK
-https://www.azlyrics.com/u/used.html,The Used,WeAreTheUsed
-https://www.azlyrics.com/s/standatlantic.html,Stand Atlantic,standatlantic
-https://www.azlyrics.com/h/hawthorneheights.html,Hawthorne Heights,HawthorneHgts
-https://www.azlyrics.com/b/bayside.html,Bayside,BaysideBand
-https://www.azlyrics.com/w/wstr.html,WSTR,WSTRNmusic
-https://www.azlyrics.com/t/trophyeyes.html,Trophy Eyes,trophyeyesmusic
-https://www.azlyrics.com/c/cantswim.html,Can't Swim,cantswim_
-https://www.azlyrics.com/m/modsun.html,MOD SUN,MODSUN
-https://www.azlyrics.com/e/everyavenue.html,Every Avenue,EveryAvenue
+https://www.azlyrics.com/p/pink.html,Pink,Pink
+https://www.azlyrics.com/s/sza.html,SZA,SZA
+https://www.azlyrics.com/f/flume.html,Flume,flumemusic
+https://www.azlyrics.com/p/paramore.html,Paramore,paramore
+https://www.azlyrics.com/l/lilnasx.html,Lil Nas X,LilNasX
+https://www.azlyrics.com/p/phoenix.html,Phoenix,wearephoenix
+https://www.azlyrics.com/d/diplo.html,Diplo,diplo
+https://www.azlyrics.com/z/zhu.html,ZHU,ZHUmusic
+https://www.azlyrics.com/l/lildurk.html,Lil Durk,lildurk
+https://www.azlyrics.com/n/nathanielrateliff.html,Nathaniel Rateliff and the Night Sweats,NRateliff
+https://www.azlyrics.com/b/billystrings.html,Billy Strings,BillyStrings
+https://www.azlyrics.com/j/jamesblake.html,James Blake,jamesblake
+https://www.azlyrics.com/w/wallows.html,Wallows,wallowsmusic
+https://www.azlyrics.com/j/jazminesullivan.html,Jazmine Sullivan,jsullivanmusic
+https://www.azlyrics.com/t/tobenwigwe.html,Tobe Nwigwe,TobeNwigwe
+https://www.azlyrics.com/w/warondrugs.html,The War On Drugs,TheWarOnDrugs
+https://www.azlyrics.com/s/spoon.html,Spoon,spoontheband
+https://www.azlyrics.com/c/conangray.html,Conan Gray,conangray
+https://www.azlyrics.com/o/olivertree.html,Oliver Tree,Olivertree
+https://www.azlyrics.com/b/big-gigantic.html,Big Gigantic,BigGigantic
+https://www.azlyrics.com/z/zachbryan.html,Zach Bryan,zachlanebryan
+https://www.azlyrics.com/b/bigwild.html,Big Wild,bigwildmusic
+https://www.azlyrics.com/s/sofitukker.html,SOFI TUKKER,sofitukker
+https://www.azlyrics.com/c/carlyraejepsen.html,Carly Rae Jepsen,carlyraejepsen
+https://www.azlyrics.com/j/japanesebreakfast.html,Japanese Breakfast,Jbrekkie
+https://www.azlyrics.com/o/omarapollo.html,Omar Apollo,omarapollo
+https://www.azlyrics.com/m/marias.html,The Marias,themarias
+https://www.azlyrics.com/m/manchesterorchestra.html,Manchester Orchestra,ManchesterOrch
+https://www.azlyrics.com/y/yungblud.html,YUNGBLUD,yungblud
+https://www.azlyrics.com/l/luckydaye.html,Lucky Daye,iamluckydaye
+https://www.azlyrics.com/p/princessnokia.html,Princess Nokia
+https://www.azlyrics.com/f/frontbottoms.html,The Front Bottoms,TheFrontBottoms
+https://www.azlyrics.com/b/bia.html,BIA,BIABIA
+https://www.azlyrics.com/s/sabrinaclaudio.html,Sabrina Claudio,sabrinaclaudio
+https://www.azlyrics.com/a/arloparks.html,Arlo Parks,arloparks
+https://www.azlyrics.com/p/purplediscomachine.html,Purple Disco Machine,PurpleDiscoM
+https://www.azlyrics.com/m/muna.html,MUNA,whereisMUNA
+https://www.azlyrics.com/l/larryjune.html,Larry June,LarryJuneTFM
+https://www.azlyrics.com/p/pinkpantheress.html,Pinkpanthress,pinkpantheress2
+https://www.azlyrics.com/m/midnight.html,The Midnight,TheMidnightLA
+https://www.azlyrics.com/r/robertglasper.html,Robert Glasper,robertglasper
+https://www.azlyrics.com/n/noahcyrus.html,Noah Cyrus,noahcyrus
+https://www.azlyrics.com/f/fayewebster.html,Faye Webster,faye_white
+https://www.azlyrics.com/w/wetleg.html,Wet Leg,wetlegband
+https://www.azlyrics.com/g/gothbabe.html,Goth Babe
+https://www.azlyrics.com/b/benee.html,BENEE,BENEEMUSIC
+https://www.azlyrics.com/j/jakebugg.html,Jake Bugg,JakeBugg
+https://www.azlyrics.com/r/ragnboneman.html,Rag'n'Bone Man,RagNBoneMan
+https://www.azlyrics.com/k/kevinmorby.html,Kevin Morby,kevinmorby
+https://www.azlyrics.com/s/samia.html,Samia,samiatheband
+https://www.azlyrics.com/m/magdalenabay.html,MagdalenaBay
+https://www.azlyrics.com/l/limperatrice.html,L'Impératrice,Imperatrice__
+https://www.azlyrics.com/a/alyaj.html,Aly & AJ,alyandaj
+https://www.azlyrics.com/g/gayle.html,GAYLE,whoisgayle
+https://www.azlyrics.com/g/genesisowusu.html,Genesis Owusu,genesisowusu
+https://www.azlyrics.com/o/omahlay.html,Omah Lay,Omah_Lay
+https://www.azlyrics.com/r/rolemodel.html,ROLE MODEL,rolemodel
+https://www.azlyrics.com/d/djo.html,Djo,djotime
+https://www.azlyrics.com/j/jakewesleyrogers.html,Jake Wesley Rogers,jakewrogers
+https://www.azlyrics.com/d/dehd.html,Dehd,dehdforever
+https://www.azlyrics.com/m/maudelatour.html,Maude Latour,maudelstatus
+https://www.azlyrics.com/g/glaive.html,Glaive,glaive
+https://www.azlyrics.com/w/wilderado.html,Wilderado,WILDERADO
+https://www.azlyrics.com/i/ibeyi.html,Ibeyi,IbeyiOfficial
+https://www.azlyrics.com/c/charlottecardin.html,Charlotte Cardin,Charlottecardin
+https://www.azlyrics.com/s/slayyyter.html,Slayyyter,slayyyter
+https://www.azlyrics.com/t/tamino.html,Tamino,taminoamir
+https://www.azlyrics.com/c/cassandrajenkins.html,Cassandra Jenkins
+https://www.azlyrics.com/t/tomodell.html,Tom Odell,tomodellupdated
+https://www.azlyrics.com/j/jessia.html,Jessia,jessiamusic
+https://www.azlyrics.com/b/benreilly.html,Ben Reilly,SaveBenReilly
+https://www.azlyrics.com/c/charlottesands.html,Charlotte Sands,charlottesands
+https://www.azlyrics.com/i/isaacdunbar.html,Isaac Dunbar,IsaacDunbar
