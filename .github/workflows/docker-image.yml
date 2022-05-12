@@ -11,6 +11,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    
+    - name: Docker meta
+      id: meta
+      uses: docker/metadata-action@v3
+      with:
+        images: ghcr.io/kendeltatsak/frequentlymost
+        flavor: |
+          latest=true
+        tags: |
+          type=sha
+          type=ref,event=pr
+          
     - name: checkout
       uses: actions/checkout@v3
       
