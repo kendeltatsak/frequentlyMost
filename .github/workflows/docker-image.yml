@@ -30,4 +30,5 @@ jobs:
       with:
         context: ./frequentlyMost
         file: ./frequentlyMost/Dockerfile
+        tags: latest
         push: true
