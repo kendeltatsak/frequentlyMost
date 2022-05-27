@@ -57,13 +57,13 @@ class AzlyricsAPI:
         
         artist = None
         # get first line from text file
-        with open('../artistsToScan.txt', 'r') as file:
+        with open('artistsToScan.txt', 'r') as file:
             lines = file.read().splitlines()
             if lines and lines[0] != '':
                 artist = lines[0].split(',')
 
         # delete first line from text file
-        with open('../artistsToScan.txt', 'w') as file:
+        with open('artistsToScan.txt', 'w') as file:
             i = 0
             if lines and lines[0] != '':
                 for line in lines:
@@ -169,7 +169,7 @@ class AzlyricsAPI:
     def sendToFile(orderedArray, artistName, numSongs):
         fileName = artistName.replace(" ", "") + '.txt'
 
-        with open('../lyrics/' + fileName, 'w', encoding='utf-8') as file:
+        with open('lyrics/' + fileName, 'w', encoding='utf-8') as file:
             file.write('Most used words by ' + artistName + ': \n')
             file.write('Number of songs scanned: ' + str(numSongs) + '\n\n')
             for i in range(len(orderedArray)):
@@ -192,7 +192,7 @@ class AzlyricsAPI:
         #    tokens = file.read().splitlines()
 
         headers = {'Authorization': 'token ' + sys.argv[0]}
-        content = open('../lyrics/' + fileName, 'r').read()
+        content = open('lyrics/' + fileName, 'r').read()
         data = {
             "public": True,
             "files": {
@@ -248,7 +248,7 @@ class AzlyricsAPI:
         
     @staticmethod
     def createDatabase():
-        conn = sqlite3.connect('../tweets.db')
+        conn = sqlite3.connect('tweets.db')
         c = conn.cursor()
         sqlCode = ("""
                 CREATE TABLE tweets (
@@ -269,7 +269,7 @@ class AzlyricsAPI:
         
     @staticmethod
     def addToDatabase(tweet, artist):
-        conn = sqlite3.connect('../tweets.db')
+        conn = sqlite3.connect('tweets.db')
         c = conn.cursor()
         sqlCode = f"""
                 INSERT INTO tweets (id_str, created_at, at_user, text, user, num_replies)
