@@ -20,7 +20,7 @@
               
           - name: execute py script 
             run: |
-              sudo pip install -r requirements.txt
+              pip install -r requirements.txt
               python code/AzlyricsAPI.py
               git add .
               git commit -m 'new run'
