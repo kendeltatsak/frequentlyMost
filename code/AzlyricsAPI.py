@@ -188,10 +188,10 @@ class AzlyricsAPI:
     @staticmethod
     def postGist(fileName):
         url = "https://api.github.com/gists"
-        with open('./tokens.txt', 'r') as file:
-            tokens = file.read().splitlines()
+        #with open('./tokens.txt', 'r') as file:
+        #    tokens = file.read().splitlines()
 
-        headers = {'Authorization': 'token ' + tokens[0]}
+        headers = {'Authorization': 'token ' + sys.argv[0]}
         content = open('../lyrics/' + fileName, 'r').read()
         data = {
             "public": True,
@@ -208,11 +208,11 @@ class AzlyricsAPI:
     
     @staticmethod
     def twitterLogin():
-        with open('./tokens.txt', 'r') as file:
-            tokens = file.read().splitlines()
+        #with open('./tokens.txt', 'r') as file:
+        #    tokens = file.read().splitlines()
 
-        auth = tweepy.OAuthHandler(tokens[1], tokens[2])
-        auth.set_access_token(tokens[3], tokens[4])
+        auth = tweepy.OAuthHandler(sys.argv[1], sys.argv[2])
+        auth.set_access_token(sys.argv[3], sys.argv[4])
         
         return tweepy.API(auth)
     

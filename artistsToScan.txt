@@ -1,9 +1,3 @@
-https://www.azlyrics.com/p/pink.html,Pink,Pink
-https://www.azlyrics.com/s/sza.html,SZA,SZA
-https://www.azlyrics.com/f/flume.html,Flume,flumemusic
-https://www.azlyrics.com/p/paramore.html,Paramore,paramore
-https://www.azlyrics.com/l/lilnasx.html,Lil Nas X,LilNasX
-https://www.azlyrics.com/p/phoenix.html,Phoenix,wearephoenix
 https://www.azlyrics.com/d/diplo.html,Diplo,diplo
 https://www.azlyrics.com/z/zhu.html,ZHU,ZHUmusic
 https://www.azlyrics.com/l/lildurk.html,Lil Durk,lildurk

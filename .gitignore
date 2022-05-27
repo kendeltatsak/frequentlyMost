@@ -1,3 +1,6 @@
 
 # Auth tokens for Twitter API, github
 tokens.txt
+
+.python_packages
+__pycache__
