@@ -1,0 +1,45 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    
+    - name: Docker meta
+      id: meta
+      uses: docker/metadata-action@v3
+      with:
+        images: ghcr.io/kendeltatsak/frequentlymost
+        flavor: |
+          latest=true
+        tags: |
+          type=sha
+          type=ref,event=pr
+          
+    - name: checkout
+      uses: actions/checkout@v3
+      
+   # - name: Build the Docker image
+   #   run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      
+    - name: Docker Login
+      uses: docker/login-action@v1.10.0
+      with:
+        registry: ghcr.io
+        username: ${{ secrets.USER }}
+        password: ${{ secrets.GHCR }}
+        
+    - name: Build and push Docker images
+      uses: docker/build-push-action@v2.6.1
+      with:
+        context: ./
+        file: ./Dockerfile
+        tags: ${{ steps.meta.outputs.tags }}
+        push: true
